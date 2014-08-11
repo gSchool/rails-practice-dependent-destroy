@@ -41,6 +41,14 @@ Then the system validates that all fields are required
 And displays error messages as in the comp if they are missing
 ```
 
+**Dosage field must be a number**
+
+```
+When I try to create a prescription
+And I try to add a non-numeric dosage amount
+Then an error message is displayed
+```
+
 **Users can see prescriptions from the medications show page**
 
 ```
