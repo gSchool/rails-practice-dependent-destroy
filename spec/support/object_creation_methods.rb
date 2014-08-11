@@ -11,5 +11,5 @@ def create_patient(overrides = {})
   Patient.create!({
     first_name: "Some",
     last_name: "Patient",
-  })
+  }.merge(overrides))
 end
