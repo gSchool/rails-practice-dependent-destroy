@@ -1,0 +1,96 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+header {
+  background: navy;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+html, body {
+  background: #efefef;
+}
+
+main {
+  .container {
+    background: white;
+  }
+}
+
+.logo {
+  float: left;
+  font-weight: bold;
+}
+
+.logout {
+  float: right;
+}
+
+.errors {
+  color: maroon;
+  margin-bottom: 1em;
+}
+
+.signin-form {
+  width: 20em;
+  border: 1px solid #ccc;
+  padding: 2em;
+  margin: 2em auto;
+  background: #efefef;
+
+  > div {
+    padding: .3em 0;
+  }
+
+  label {
+    display: inline-block;
+    width: 6em;
+  }
+
+  input[type=submit] {
+    margin-left: 6.3em;
+  }
+}
+
+.table {
+  $light-gray: #efefef;
+
+  width: 100%;
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  td, th {
+    padding: .5em;
+    border: 1px solid $light-gray;
+  }
+
+  tbody {
+    tr:nth-child(odd) td {
+      background: $light-gray;
+    }
+  }
+}

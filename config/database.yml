@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: g2-rails-practice-prescriptions-development
+
+test:
+  <<: *default
+  database: g2-rails-practice-prescriptions-test

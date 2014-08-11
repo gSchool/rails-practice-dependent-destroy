@@ -1,0 +1,16 @@
+<h1>Patients</h1>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @patients.each do |patient| %>
+    <tr>
+      <td><%= full_name(patient) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
