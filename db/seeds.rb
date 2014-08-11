@@ -1,5 +1,6 @@
 User.destroy_all
 Patient.destroy_all
+Medication.destroy_all
 
 user = User.create!(
   name: "Some User",
@@ -20,3 +21,7 @@ Patient.create!(first_name: "Sue", last_name: "Sylvester")
 Patient.create!(first_name: "Mercedes", last_name: "Jones")
 Patient.create!(first_name: "Rachel", last_name: "Barry")
 Patient.create!(first_name: "Finn", last_name: "Hudson")
+
+Medication.create!(name: "Tylenol")
+Medication.create!(name: "Cough Syrup")
+Medication.create!(name: "Advil")

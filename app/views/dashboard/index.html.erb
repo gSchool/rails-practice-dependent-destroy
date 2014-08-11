@@ -1,0 +1,33 @@
+<h1>Dashboard</h1>
+
+<h2>Patients</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @patients.each do |patient| %>
+    <tr>
+      <td><%= link_to full_name(patient), patient_path(patient) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<h2>Medications</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @medications.each do |medication| %>
+      <tr>
+        <td><%= medication.name %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
