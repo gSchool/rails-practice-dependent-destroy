@@ -56,7 +56,7 @@ Person show page
 
 <img src="project/images/04-person-show.png" />
 
-Person show page
+Medication show page
 
 <img src="project/images/05-medications-show.png" />
 
