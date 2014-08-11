@@ -15,27 +15,46 @@ Note: email/password combinations for existing users populated by `rake db:seed`
 
 ## Stories
 
+**Users can see a patient's list of prescriptions**
+
+```
+Given that I am on the index page
+When I click on a patient's name
+Then I see the patient page with an empty table of prescriptions
+```
+
 **Users can add prescriptions**
 
 ```
-Create a patients show page
-From the patients show page
-Users can add prescriptions
-All fields in prescriptions must be present
+Given I am on the patient's show page
+When I click on "Add prescription"
+And I fill in the fields from the comp
+Then a prescription is created with a flash message "Your prescription has been created" 
+And you see the new prescription in the prescription table
+```
+
+**All fields for a prescription are required**
+
+```
+When I try to create a prescription
+Then the system validates that all fields are required
+And displays error messages as in the comp if they are missing
 ```
 
 **Users can see prescriptions from the medications show page**
 
 ```
-Create a medications show page
-On that page, show all the prescriptions for that medication
+Given I am on the index page
+And I click on the name of a medication
+Then I see a list of people that have a prescription for that medication
 ```
 
 **End date cannot be before start date on prescriptions**
 
 ```
-If a user enters an end date before a start date
-Display a validation error
+When the user enters an end date that is before the start date
+Then the system displays a validation error that says
+"End date must be after the start date"
 ```
 
 ## Wireframes
