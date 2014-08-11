@@ -47,7 +47,7 @@
       <controlProperties>
         <borderColor>0</borderColor>
         <italic>true</italic>
-        <text>ex.%201%20pill%20every%204%20hours</text>
+        <text>ex.%20every%204%20hours</text>
       </controlProperties>
     </control>
     <control controlID="32" controlTypeID="com.balsamiq.mockups::DateChooser" x="297" y="353" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="10" locked="false" isInGroup="-1"/>
