@@ -49,11 +49,11 @@ And I click on the name of a medication
 Then I see a list of people that have a prescription for that medication
 ```
 
-**Dosage field must be a number**
+**Dosage field must start with a number**
 
 ```
 When I try to create a prescription
-And I try to add a non-numeric dosage amount
+And I try to add a dosage without a number as the only characters before the first space
 Then an error message is displayed
 ```
 
