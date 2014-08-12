@@ -41,20 +41,20 @@ Then the system validates that all fields are required
 And displays error messages as in the comp if they are missing
 ```
 
-**Dosage field must be a number**
-
-```
-When I try to create a prescription
-And I try to add a non-numeric dosage amount
-Then an error message is displayed
-```
-
 **Users can see prescriptions from the medications show page**
 
 ```
 Given I am on the index page
 And I click on the name of a medication
 Then I see a list of people that have a prescription for that medication
+```
+
+**Dosage field must be a number**
+
+```
+When I try to create a prescription
+And I try to add a non-numeric dosage amount
+Then an error message is displayed
 ```
 
 **End date cannot be before start date on prescriptions**
@@ -71,6 +71,10 @@ Index page
 
 <img src="project/images/01-index.png" />
 
+Patient show page
+
+<img src="project/images/04-patient-show.png" />
+
 New prescription page
 
 <img src="project/images/02-new-prescription.png" />
@@ -79,14 +83,10 @@ New prescription page w/ errors
 
 <img src="project/images/03-new-prescription-with-errors.png" />
 
-Person show page
-
-<img src="project/images/04-person-show.png" />
-
 Medication show page
 
 <img src="project/images/05-medications-show.png" />
 
 ## References
 
-* [ActiveRecord Enum](http://api.rubyonrails.org/v4.1.0/classes/ActiveRecord/Enum.html)
+* [Select Tag](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-select)

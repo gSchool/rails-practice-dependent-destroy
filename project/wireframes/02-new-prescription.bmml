@@ -1,8 +1,8 @@
 <mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="924" measuredH="558" mockupW="880" mockupH="536">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="44" y="22" w="880" h="536" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="44" y="22" w="880" h="536" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
       <controlProperties>
-        <text>Add%20New</text>
+        <text>Add%20New%0Ahttp%3A//localhost%3A3000/patients/2/prescriptions/new</text>
       </controlProperties>
     </control>
     <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="297" y="443" w="-1" h="-1" measuredW="137" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
@@ -43,7 +43,7 @@
         <text>Schedule</text>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="309" w="202" h="-1" measuredW="145" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="309" w="202" h="-1" measuredW="116" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <borderColor>0</borderColor>
         <italic>true</italic>

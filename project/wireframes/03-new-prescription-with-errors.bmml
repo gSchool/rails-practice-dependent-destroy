@@ -2,7 +2,7 @@
   <controls>
     <control controlID="27" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="44" y="22" w="880" h="628" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
       <controlProperties>
-        <text>Add%20New</text>
+        <text>Add%20New%0Ahttp%3A//localhost%3A3000/patients/2/prescriptions</text>
       </controlProperties>
     </control>
     <control controlID="28" controlTypeID="com.balsamiq.mockups::Button" x="297" y="563" w="-1" h="-1" measuredW="137" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
@@ -49,7 +49,7 @@
         <text>Schedule</text>
       </controlProperties>
     </control>
-    <control controlID="40" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="429" w="202" h="-1" measuredW="145" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="429" w="202" h="-1" measuredW="116" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <borderColor>0</borderColor>
         <italic>true</italic>
