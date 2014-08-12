@@ -5,7 +5,7 @@
         <text>Add%20New%0Ahttp%3A//localhost%3A3000/patients/2/prescriptions/new</text>
       </controlProperties>
     </control>
-    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="297" y="443" w="-1" h="-1" measuredW="137" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="297" y="403" w="-1" h="-1" measuredW="137" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <align>right</align>
         <color>2848996</color>
@@ -32,32 +32,32 @@
         <text>Dosage</text>
       </controlProperties>
     </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::ComboBox" x="397" y="229" w="92" h="-1" measuredW="44" measuredH="62" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="229" w="202" h="-1" measuredW="112" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>ml%0Amg%0Apills</text>
+        <italic>true</italic>
+        <text>ex.%204ml%20or%203%20pills</text>
       </controlProperties>
     </control>
-    <control controlID="26" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="229" w="-1" h="-1" measuredW="79" measuredH="26" zOrder="7" locked="false" isInGroup="-1"/>
-    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="210" y="309" w="-1" h="-1" measuredW="54" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="210" y="269" w="-1" h="-1" measuredW="54" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Schedule</text>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="309" w="202" h="-1" measuredW="116" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::TextInput" x="297" y="269" w="202" h="-1" measuredW="116" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <borderColor>0</borderColor>
         <italic>true</italic>
         <text>ex.%20every%204%20hours</text>
       </controlProperties>
     </control>
-    <control controlID="32" controlTypeID="com.balsamiq.mockups::DateChooser" x="297" y="353" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="10" locked="false" isInGroup="-1"/>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::Label" x="210" y="355" w="-1" h="-1" measuredW="56" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::DateChooser" x="297" y="313" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Label" x="210" y="315" w="-1" h="-1" measuredW="56" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Starts%20on</text>
       </controlProperties>
     </control>
-    <control controlID="34" controlTypeID="com.balsamiq.mockups::DateChooser" x="297" y="393" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="12" locked="false" isInGroup="-1"/>
-    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="210" y="395" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::DateChooser" x="297" y="353" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="210" y="355" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Ends%20on</text>
       </controlProperties>

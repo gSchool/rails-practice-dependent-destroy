@@ -86,7 +86,3 @@ New prescription page w/ errors
 Medication show page
 
 <img src="project/images/05-medications-show.png" />
-
-## References
-
-* [Select Tag](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-select)

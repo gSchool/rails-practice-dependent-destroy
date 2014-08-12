@@ -10,9 +10,19 @@
         <text>Patients</text>
       </controlProperties>
     </control>
-    <control controlID="37" controlTypeID="com.balsamiq.mockups::DataGrid" x="172" y="161" w="-1" h="-1" measuredW="115" measuredH="111" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::DataGrid" x="172" y="161" w="667" h="111" measuredW="115" measuredH="111" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Name%0A%5BSue%20Sylvester%5D%0A%5BWill%20Schuster%5D%0A%5BMercedes%20Jones%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::SubTitle" x="172" y="299" w="-1" h="-1" measuredW="130" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Medications</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::DataGrid" x="172" y="341" w="666" h="111" measuredW="95" measuredH="111" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%0A%5BTylenol%5D%0A%5BCough%20Syrup%5D%0A%5BIbuprofen%5D</text>
       </controlProperties>
     </control>
   </controls>
