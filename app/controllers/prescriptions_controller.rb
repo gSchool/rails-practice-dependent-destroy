@@ -10,6 +10,8 @@ class PrescriptionsController < ApplicationController
     )
 
     @prescription.save!
+
+    flash[:notice] = "Your prescription has been created"
     redirect_to patient_path(params[:patient_id])
   end
 

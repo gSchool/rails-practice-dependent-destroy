@@ -21,7 +21,14 @@
   </div>
 </header>
 <main>
+
   <div class="container">
+    <% if flash.any? %>
+      <div class="flash">
+	<%= flash[:notice] %>
+      </div>
+    <% end  %>
+
     <%= yield %>
   </div>
 </main>

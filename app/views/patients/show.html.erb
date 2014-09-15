@@ -12,7 +12,7 @@
   </thead>
 
   <tbody>
-    <%= @patient.prescriptions.each do |prescription| %>
+    <% @patient.prescriptions.each do |prescription| %>
     <tr>
       <td> <%= prescription.medication_name %> </td>
       <td> <%= prescription.dosage_with_schedule %> </td> 

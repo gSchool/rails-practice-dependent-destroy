@@ -45,6 +45,9 @@ feature "Patients" do
 
     click_on "Create Prescription"
 
+    expect(page).to have_content("Your prescription has been created")
+
+
     expect(page).to have_content("Jeff Taggart")
     expect(page).to have_content("Prescriptions")
 
