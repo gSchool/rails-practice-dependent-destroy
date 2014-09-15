@@ -34,7 +34,7 @@ class Prescription < ActiveRecord::Base
     return unless starts_on.present? && ends_on.present?
 
     if starts_on > ends_on
-      errors.add(:starts_on, "must be earlier than ends_on")
+      errors.add(:starts_on, "must be earlier than ends on")
     end
   end
 
