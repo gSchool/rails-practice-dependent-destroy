@@ -6,6 +6,7 @@ class Prescription < ActiveRecord::Base
             :presence => true
 
   validate :dosage_starts_with_number
+  validate :starts_on_later_than_ends_on
 
   delegate :name, :to => :medication, :prefix => true
 
@@ -27,6 +28,14 @@ class Prescription < ActiveRecord::Base
     if dosage.present? && !dosage.match(/^\d/)
       errors.add(:dosage, "must start with a number")
     end 
+  end
+
+  def starts_on_later_than_ends_on
+    return unless starts_on.present? && ends_on.present?
+
+    if starts_on > ends_on
+      errors.add(:starts_on, "must be earlier than ends_on")
+    end
   end
 
 end
