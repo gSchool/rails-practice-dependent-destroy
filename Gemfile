@@ -12,8 +12,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
-  gem 'pry-rails'
-  gem 'pry-byebug'
   gem "rspec-rails", "3.0.1"
   gem 'rspec-collection_matchers', '~> 1.0.0'
   gem "capybara", "2.3.0"
