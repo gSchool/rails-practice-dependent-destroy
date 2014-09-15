@@ -25,6 +25,7 @@
     padding: 15px;
 }
 
+
 header {
     background: navy;
     color: white;
@@ -104,6 +105,15 @@ main {
 
 
 form {
+
+    .errors {
+	color: red;
+    }
+
+    .field_with_errors {
+	display: inline-block;
+    }
+
     label {
 	display: inline-block;
 	width: 150px;

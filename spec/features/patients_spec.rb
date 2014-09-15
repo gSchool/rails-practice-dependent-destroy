@@ -56,4 +56,17 @@ feature "Patients" do
     expect(page).to have_content("01/01/2014 - 01/02/2014")
   end
 
+  scenario "user can see errors on the prescription page" do
+    create_user_and_login
+
+    click_on("Jeff Taggart")
+    click_on("Add Prescription")
+
+    expect(page).to have_content("Add a prescription to Jeff Taggart")
+
+    click_on "Create Prescription"
+
+    expect(page).to have_content("Medication can't be blank")
+  end
+
 end

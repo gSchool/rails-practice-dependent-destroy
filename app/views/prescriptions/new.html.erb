@@ -1,9 +1,20 @@
 <h1>Add a prescription to <%= @patient.full_name %></h1>
 
 <%= form_for [@patient, @prescription] do |f| %>
+  <div class="errors">
+    <% if f.object.errors.any? %>
+
+	<ul>
+	  <% f.object.errors.full_messages.each do |error| %>
+	    <li> <%= error %> </li>
+	  <% end %>
+	</ul>
+    
+    <% end %>
+  </div>
   <div>
     <%= f.label :medication_id, "Medication" %>
-    <%= f.collection_select :medication_id, Medication.all, :id, :name %>
+    <%= f.collection_select :medication_id, Medication.all, :id, :name, :include_blank => "Please choose a prescription" %>
   </div>
 
   <div>

@@ -5,14 +5,18 @@ class PrescriptionsController < ApplicationController
   end
 
   def create
+    @patient = Patient.find(params[:patient_id])
     @prescription = Prescription.new(
-      allowed_params.merge(:patient_id => params[:patient_id])
+      allowed_params.merge(:patient => @patient)
     )
 
-    @prescription.save!
+    if @prescription.save
+      flash[:notice] = "Your prescription has been created"
+      redirect_to @patient
+    else
+      render :new
+    end
 
-    flash[:notice] = "Your prescription has been created"
-    redirect_to patient_path(params[:patient_id])
   end
 
 
