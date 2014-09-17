@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   resources :patients do
     resources :prescriptions
   end
+
+  resources :medications, :only => [:show]
 end

@@ -1,5 +1,6 @@
 class Prescription < ActiveRecord::Base
   belongs_to :medication
+  belongs_to :prescribed_by, :class_name => User
   belongs_to :patient
 
   validates :medication, :patient, :dosage, :schedule, :starts_on, :ends_on,
@@ -9,6 +10,14 @@ class Prescription < ActiveRecord::Base
   validate :starts_on_later_than_ends_on
 
   delegate :name, :to => :medication, :prefix => true
+
+  def prescribed_by_name
+    prescribed_by.name
+  end
+
+  def patient_name
+    patient.full_name
+  end
 
   def dosage_with_schedule
     "#{dosage} #{schedule}"

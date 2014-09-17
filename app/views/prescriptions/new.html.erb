@@ -13,7 +13,7 @@
     <% end %>
   </div>
   <div>
-    <%= f.label :medication_id, "Medication" %>
+    <%= f.label :medication_id %>
     <%= f.collection_select :medication_id, Medication.all, :id, :name, :include_blank => "Please choose a prescription" %>
   </div>
 

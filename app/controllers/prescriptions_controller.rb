@@ -7,7 +7,8 @@ class PrescriptionsController < ApplicationController
   def create
     @patient = Patient.find(params[:patient_id])
     @prescription = Prescription.new(
-      allowed_params.merge(:patient => @patient)
+      allowed_params.merge(:patient => @patient,
+                           :prescribed_by => current_user)
     )
 
     if @prescription.save
@@ -19,16 +20,15 @@ class PrescriptionsController < ApplicationController
 
   end
 
-
   private
 
   def allowed_params
     params.require(:prescription).permit(
-      :medication_id,
-      :dosage,
-      :schedule,
-      :starts_on,
-      :ends_on
+        :medication_id,
+        :dosage,
+        :schedule,
+        :starts_on,
+        :ends_on
     )
   end
 end
