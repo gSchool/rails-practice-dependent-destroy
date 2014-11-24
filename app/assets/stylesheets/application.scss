@@ -4,93 +4,128 @@
  */
 
 .container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 1em;
-  box-sizing: border-box;
+    width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
 
-  &:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-  }
+    &:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+    }
 }
 
-header {
-  background: navy;
-  color: white;
+.flash {
+    width: 100%;
+    background-color: lightgreen;
+    padding: 15px;
+}
 
-  a {
+
+header {
+    background: navy;
     color: white;
-    text-decoration: none;
-  }
+
+    a {
+	color: white;
+	text-decoration: none;
+    }
 }
 
 html, body {
-  background: #efefef;
+    background: #efefef;
 }
 
 main {
-  .container {
-    background: white;
-  }
+    .container {
+	background: white;
+    }
 }
 
 .logo {
-  float: left;
-  font-weight: bold;
+    float: left;
+    font-weight: bold;
 }
 
 .logout {
-  float: right;
+    float: right;
 }
 
 .errors {
-  color: maroon;
-  margin-bottom: 1em;
+    color: maroon;
+    margin-bottom: 1em;
 }
 
 .signin-form {
-  width: 20em;
-  border: 1px solid #ccc;
-  padding: 2em;
-  margin: 2em auto;
-  background: #efefef;
+    width: 20em;
+    border: 1px solid #ccc;
+    padding: 2em;
+    margin: 2em auto;
+    background: #efefef;
 
-  > div {
-    padding: .3em 0;
-  }
+    > div {
+	padding: .3em 0;
+    }
 
-  label {
-    display: inline-block;
-    width: 6em;
-  }
+    label {
+	display: inline-block;
+	width: 6em;
+    }
 
-  input[type=submit] {
-    margin-left: 6.3em;
-  }
+    input[type=submit] {
+	margin-left: 6.3em;
+    }
 }
 
 .table {
-  $light-gray: #efefef;
+    $light-gray: #efefef;
 
-  width: 100%;
-  th {
-    font-weight: bold;
-    text-align: left;
-  }
+    width: 100%;
 
-  td, th {
-    padding: .5em;
-    border: 1px solid $light-gray;
-  }
-
-  tbody {
-    tr:nth-child(odd) td {
-      background: $light-gray;
+    th {
+	font-weight: bold;
+	text-align: left;
     }
-  }
+
+    td, th {
+	padding: .5em;
+	border: 1px solid $light-gray;
+    }
+
+    tbody {
+	tr:nth-child(odd) td {
+	    background: $light-gray;
+	}
+    }
 }
+
+
+form {
+
+    .errors {
+	color: red;
+    }
+
+    .field_with_errors {
+	display: inline-block;
+    }
+
+    label {
+	display: inline-block;
+	width: 150px;
+    }
+
+    div {
+	margin-bottom: 15px;
+    }
+
+    input[type=submit] {
+	margin-left: 150px;
+    }
+}
+
+

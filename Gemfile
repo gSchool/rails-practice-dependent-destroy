@@ -11,6 +11,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem "rspec-rails"
+  gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'rspec-collection_matchers', '~> 1.0.0'
   gem "capybara"
   gem 'launchy'

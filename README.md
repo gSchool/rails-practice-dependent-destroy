@@ -69,20 +69,20 @@ Then the system displays a validation error that says
 
 Index page
 
-<img src="project/images/01-index.png" />
+![some image](project/images/01-index.png)
 
 Patient show page
 
-<img src="project/images/04-patient-show.png" />
+![Patient show page](project/images/04-patient-show.png)
 
 New prescription page
 
-<img src="project/images/02-new-prescription.png" />
+![new precription page](project/images/02-new-prescription.png)
 
 New prescription page w/ errors
 
-<img src="project/images/03-new-prescription-with-errors.png" />
+![new prescription with errors](project/images/03-new-prescription-with-errors.png)
 
 Medication show page
 
-<img src="project/images/05-medications-show.png" />
+![medication show page](project/images/05-medications-show.png)
