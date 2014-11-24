@@ -11,7 +11,7 @@ feature "Patients" do
 
   scenario "User sees all patients" do
     create_patient_and_user_and_login
-    expect(page).to have_content("Jeff", "Taggart")
+    expect(page).to have_content("Jeff")
   end
 
   scenario "User sees a patients prescriptions" do
@@ -92,7 +92,7 @@ feature "Patients" do
                          :starts_on => Time.parse("2014-02-01"),
                          :ends_on => Time.parse("2014-02-05"))
 
-    
+
     visit root_path
 
     click_on "Some medication"
