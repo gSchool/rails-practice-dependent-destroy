@@ -5,8 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: g2-rails-practice-prescriptions-development
+  database: g2-rails-practice-dependent-destroy-development
 
 test:
   <<: *default
-  database: g2-rails-practice-prescriptions-test
+  database: g2-rails-practice-dependent-destroy-test
