@@ -11,12 +11,14 @@
   <% @patients.each do |patient| %>
     <tr>
       <td><%= link_to full_name(patient), patient %></td>
+      <td><%= link_to "Remove Patient", patient_path(patient), method: :delete  %>
     </tr>
   <% end %>
   </tbody>
 </table>
 
 <h2>Medications</h2>
+<%= link_to "New Medication", new_medication_path %>
 <table class="table">
   <thead>
   <tr>
@@ -27,6 +29,7 @@
   <% @medications.each do |medication| %>
       <tr>
         <td><%= link_to medication.name, medication %></td>
+        <td><%= link_to "Lobbyists have stopped paying me to push this", medication_path(medication), method: :delete %>
       </tr>
   <% end %>
   </tbody>
