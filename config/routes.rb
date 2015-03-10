@@ -8,5 +8,5 @@ Rails.application.routes.draw do
     resources :prescriptions
   end
 
-  resources :medications, :only => [:show]
+  resources :medications, :only => [:show, :destroy]
 end
