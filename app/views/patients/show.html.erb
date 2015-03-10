@@ -1,6 +1,7 @@
 <h1><%= @patient.full_name %></h1>
 <h2>Prescriptions</h2>
-<%= link_to "Add Prescription", new_patient_prescription_path(@patient) %>
+<%= link_to "Add Prescription", new_patient_prescription_path(@patient) %> |
+<%= link_to "Delete Patient", patient_path(@patient), method: :delete %>
 
 <table class="table">
     <thead>
