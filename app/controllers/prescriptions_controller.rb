@@ -20,6 +20,13 @@ class PrescriptionsController < ApplicationController
 
   end
 
+  def destroy
+    prescription = Prescription.find(params[:id])
+    patient = Patient.find(params[:patient_id])
+    prescription.destroy
+    redirect_to patient_path(patient)
+  end
+
   private
 
   def allowed_params

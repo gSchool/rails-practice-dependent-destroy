@@ -1,5 +1,5 @@
 class Patient < ActiveRecord::Base
-  has_many :prescriptions
+  has_many :prescriptions, dependent: :destroy
 
   validates_presence_of :first_name, :last_name
 
