@@ -17,6 +17,7 @@
             <td> <%= prescription.medication_name %> </td>
             <td> <%= prescription.dosage_with_schedule %> </td>
             <td> <%= prescription.dates %> </td>
+            <td> <%= link_to "Remove", patient_prescription_path(@patient, prescription), method: :delete %>
         </tr>
     <% end %>
     </tbody>

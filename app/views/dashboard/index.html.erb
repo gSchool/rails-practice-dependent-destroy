@@ -11,6 +11,7 @@
   <% @patients.each do |patient| %>
     <tr>
       <td><%= link_to full_name(patient), patient %></td>
+      <td><%= link_to "Remove Patient", patient_path(patient), method: :delete %></td>
     </tr>
   <% end %>
   </tbody>
