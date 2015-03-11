@@ -28,7 +28,7 @@
   <% @medications.each do |medication| %>
       <tr>
         <td><%= link_to medication.name, medication %></td>
-        <td><%= link_to 'Remove Medication', medication_path(medication), method: :delete %></td>
+        <td><%= link_to "Remove Medication", medication_path(medication), method: :delete %></td>
       </tr>
   <% end %>
   </tbody>
